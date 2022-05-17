@@ -1,2 +1,2 @@
-# Portafolio-Pamela-Rugel-D-az
+# Pamela Rugel Díaz
 Portafolio con los proyectos desarrollados en la materia de DAWM
