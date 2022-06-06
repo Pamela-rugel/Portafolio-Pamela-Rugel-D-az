@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mi portafolio</title>
+  <link rel='stylesheet' href='estilos.css' />
+</head>
+
+<body>
+  <div class="container">
+    
+      <div class="perfil">
+        <label>Pamela Rugel</label>
+        <p>El único modo de hacer un gran trabajo es amar lo que haces</p>
+      </div>
+        <div class="hab_juego">
+          <div class="card">
+            <h2>Habilidades</h2>
+            <ul>
+              <li>Leer un libro en tres días</li>
+              <li>Adaptación al archivo</li>
+              <li>Tolerancia a la presión</li>
+              <li>Ser organizada</li>
+              <li>Empatía</li>
+              <li>Buen manejo de emociones</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Juego preferido</h2>
+            <table>
+              <tr>
+                <td>X</td>
+                <td>O</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>O</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>X</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="info">
+          <div class="card">
+            <h2>Información personal</h2>
+            <p>Nació el 1 de abril del 2001</p>
+            <p>Estudia en ESPOL</p>
+            <p>Carrera conpumtación</p>
+            <p>Correo pamelanayeli2001@gmail.com</p>
+            <p>N° telf. 0967471295</p>
+            <p>De Ecuador</p>
+            <p>Vive en Mucho Lote, Guayaquil</p>
+          </div>
+        </div>
+
+        <div class="gustos_form">
+          <div class="card">
+            <h2>Gustos Musicales</h2>
+            <audio controls>
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="card">
+            <h2>Agenda una reunion para conocernos</h2>
+            <form id="formulario">
+              <label>Nombre: </label><input type="text" name="NombresCompletos" required><br>
+              <label>Apellidos: </label><input type="text" name="NombresCompletos" required><br>
+              Correo electrónico: <input type="email" name="correo" required><br>
+              Género:<br>
+              <input type="radio" name="genero" value="masculino">Masculino<br>
+              <input type="radio" name="genero" value="femenino">Femenino<br>
+              <input type="radio" name="genero" value="otro">Otro<br>
+              Fecha: <input type="date"><br>
+              Plataforma:
+              <select name="select">
+                <option value="windows">Teams</option>
+                <option value="macOs">Zoom</option>
+                <option value="linux">Google Meets</option>
+              </select><br>
+              Mensaje: <textarea name="textarea" rows="10" cols="30"></textarea><br>
+              <input type="checkbox"> No soy un robot <br>
+              <button>Enviar</button>
+
+            </form>
+          </div>
+    <!-- Fin -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@1&display=swap');
+
+/*Variables globales*/
+
+:root {
+    --color-1: #F0ECE3;
+    --color-2: #DFD3C3;
+    --color-3: #C7B198;
+    --color-4: #A68DAD;
+}
+
+  
+  /*
+    Utilice el selector 
+      universal 
+    con la regla: 
+      Familia tipográfica
+    y el valor:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  */
+  
+  /* Inicio */
+  
+  /* Fin */
+  * {
+    font-family: 'Tiro Telugu', serif;
+  }
+
+  body{
+    background-color: var(--color-1);
+  }
+
+  /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;*/
+  .container {  
+    padding-top: 5rem;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    /*gap: 0px 0px;*/
+    grid-auto-flow: row;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:1em;
+    grid-template-areas:
+      "perfil hab_juego hab_juego"
+      "perfil info info"
+      "perfil gustos_form gustos_form ";
+  }
+
+  .perfil {
+     grid-area: perfil;
+  }
+  
+  .hab_juego { 
+    grid-area: hab_juego; 
+    display: inline-flex;
+  }
+  
+  .info { 
+    grid-area: info; 
+  }
+  
+  .gustos_form { 
+    grid-area: gustos_form; 
+    display: inline-flex;
+  }
+  
+
+  /*h2 {
+    font-size: 0.5rem;
+    font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+    margin: 0.3em 0 0.1em 0;
+  }*/
+
+
+  div.container div.card{
+    background-color:  var(--color-2);;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px  #ad3500;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+  }
+
+  .card > p {
+    opacity: 0.4;
+    transition: all 0.3s ease;
+  }
+  
+  h2 + p {
+    text-align: justify;
+  }
+
+  .card:hover{
+    box-shadow: 0px 50px 75px -25px var(--color-4) !important;
+    top: -20px !important;
+  }
+
+  .tam_info{
+    height: 150px;
+    width: 200px;
+  }
+
+  .tam_card{
+    height: 150px;
+    width: 200px;
+  }
