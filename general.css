@@ -31,7 +31,7 @@ body {
   grid-template-areas:
     "perfil info info"
     "perfil hab gustos"
-    "perfil hab mi_form";
+    "perfil juego mi_form";
 }
 
 .perfil {
