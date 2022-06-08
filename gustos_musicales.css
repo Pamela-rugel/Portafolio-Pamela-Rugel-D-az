@@ -1,0 +1,31 @@
+.container_3 {
+    display: grid;
+    padding-top: 3rem;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+    grid-template-areas:
+      "music1 music2"
+      "video video";
+  }
+  
+  .music1 {
+    grid-area: music1;
+    display: inline-flex;
+  }
+  
+  .music2 {
+    grid-area: music2;
+    display: inline-flex;
+  }
+  
+  .video {
+    grid-area: video;
+    display: inline-flex;
+  }
+  
+  .estilo_audio{
+    width: 10rem;
+    height: 2rem;
+  }

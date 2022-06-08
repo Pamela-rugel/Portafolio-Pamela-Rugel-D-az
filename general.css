@@ -1,0 +1,103 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@1&display=swap');
+
+/*Variables globales*/
+
+:root {
+  --color-1: #F0ECE3;
+  --color-2: #DFD3C3;
+  --color-3: #C7B198;
+  --color-4: #A68DAD;
+}
+
+/*Fuente de letra general*/
+
+* {
+  font-family: 'Lobster', cursive;
+}
+
+/*color de fondo*/
+body {
+  background-color: var(--color-1);
+}
+
+/*contenedor que sapara perfi, informacion personal, habilidades, gustos musicales, juego preferido y el form */
+.container {
+  border-top: 30rem;
+  padding: 2rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-areas:
+    "perfil info info"
+    "perfil hab juego"
+    "perfil gustos mi_form";
+}
+
+.perfil {
+  grid-area: perfil;
+}
+
+.hab_juego {
+  grid-area: hab_juego;
+  display: inline-flex;
+
+}
+
+.info {
+  grid-area: info;
+  /*display: inline-flex;*/
+}
+
+.gustos_form {
+  grid-area: gustos_form;
+  /*display: inline-flex;*/
+}
+
+
+
+/*h2 {
+  font-size: 0.5rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+  margin: 0.3em 0 0.1em 0;
+}*/
+
+/* modelo de las cards*/
+div.container div.card {
+  background-color: var(--color-2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 15px #ad3500;
+  position: relative;
+  transition: all 0.3s ease;
+  top: 0;
+  height: auto;
+  width: auto;
+}
+
+/*titulo centrado en las cards*/
+
+div.container div.card h2 {
+  text-align: center;
+}
+
+/*sombra al pasar el mouse por la card */
+.card:hover {
+  box-shadow: 0px 50px 75px -25px var(--color-4) !important;
+  top: -20px !important;
+}
+
+/*imagen del portafolio fija*/
+.branch {
+  position: fixed;
+  z-index: 9999;
+  top: 10px;
+  right: 2rem;
+}
+
+
+/*para img 
+width:100%
+height: auto
+*/

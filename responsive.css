@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+    .container {
+        display: grid;
+        /*gap: 0px 0px;*/
+        padding: 1rem;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2em;
+        grid-template-areas:
+            "perfil"
+            "info"
+            "hab"
+            "juego"
+            "gustos"
+            "mi_form";
+
+    }
+
+    .container_2 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5rem;
+        grid-template-areas:
+            "info_personal"
+            "cont_mapa";
+    }
+
+    .branch {
+        position: relative;
+        top: 10px;
+        right: 5px;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 640px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width:1100px) {
+    body {
+        font-size: 0.75rem;
+    }
+}
