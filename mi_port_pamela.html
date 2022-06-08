@@ -12,15 +12,18 @@
   <link rel='stylesheet' href='mi_form.css' />
   <link rel='stylesheet' href='responsive.css' />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="branch">
+  <!-- <div class="branch">
     <img src="branch_icon.png" alt="Simbolo de porttx" width="70px" height="50px">
   </div>
+  -->
 
   <div class="container">
     <div class="perfil">
+      <img src="perfil.jpg" alt="Foto de perfil" width="500px" height="300px">
       <label>Pamela Rugel</label>
       <p>El único modo de hacer un gran trabajo es amar lo que haces</p>
     </div>
@@ -29,29 +32,38 @@
         <h2>Información personal</h2>
         <div class="container_2">
           <div class="info_personal">
-            <p>Nació el 1 de abril del 2001</p>
-            <p>Estudia en ESPOL</p>
-            <p>Carrera conpumtación</p>
-            <p>Correo pamelanayeli2001@gmail.com</p>
-            <p>N° telf. 0967471295</p>
-            <p>De Ecuador</p>
-            <p>Vive en Mucho Lote, Guayaquil</p>
+            <p> <i class="fa fa-birthday-cake icon" style="font-size: 1.5rem;"></i><span class="plomo"> Nació el </span>
+              1 de abril del 2001</p>
+            <p> <i class="fa fa-institution icon" style="font-size: 1.5rem;"></i> <span class="plomo">Estudia en </span>
+              ESPOL</p>
+            <p> <i class="fa fa-graduation-cap icon" style="font-size: 1.5rem;"> </i> <span class="plomo">Carrera
+              </span> Computación</p>
+            <p> <i class="fa fa-envelope icon" style="font-size: 1.5rem;"></i> <span class="plomo">Correo </span>
+              pamelanayeli2001@gmail.com</p>
+            <p> <i class="fa fa-phone-square icon" style="font-size: 1.5rem;"></i> <span class="plomo">N° telf. </span>
+              0967471295</p>
+            <p> <i class="fa fa-globe icon" style="font-size: 1.5rem;"></i> <span class="plomo">De </span> Ecuador</p>
           </div>
           <div class="cont_mapa">
-
+            <p> <i class="fa fa-map-marker icon" style="font-size: 1.5rem;"> </i><span class="plomo">Vive en </span>
+              Mucho Lote, Guayaquil</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.185127151229!2d-79.92285808255615!3d-2.0817391999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d0d7d7894f1dd%3A0x30d785526229fa89!2sMucho%20Lote%2C%20Guayaquil!5e0!3m2!1ses!2sec!4v1654691262974!5m2!1ses!2sec"
+              width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </div>
     <div class="card hab">
-      <h2>Habilidades</h2>
+      <h2>Habilidades</h2><br>
       <ul>
-        <li>Leer un libro en tres días</li>
-        <li>Adaptación al archivo</li>
-        <li>Tolerancia a la presión</li>
-        <li>Ser organizada</li>
-        <li>Empatía</li>
-        <li>Buen manejo de emociones</li>
+        <li>Leer un libro en tres días</li><br>
+        <li>Adaptación al archivo</li><br>
+        <li>Tolerancia a la presión</li><br>
+        <li>Ser organizada</li><br>
+        <li>Empatía</li><br>
+        <li>Buen manejo de emociones</li><br>
       </ul>
     </div>
 
@@ -59,66 +71,62 @@
       <h2>Gustos Musicales</h2>
       <div class="container_3">
         <div class="music1">
-          <audio class="estilo_audio" controls>
+          <p></i><span class="plomo">Ariana Grande</span><br> 7 Rings</p>
+          <audio class="estilo_audio" controls="yes">
             <source src="horse.ogg" type="audio/ogg">Your browser does not support the audio element.
           </audio>
         </div>
-        <div class="music2">
-          <audio class="estilo_audio" controls>
-            <source src="horse.mp3" type="audio/mpeg">Your browser does not support the audio element.
-          </audio>
-        </div>
         <div class="video">
-          <video class="" controls>
-          <source src="https://youtu.be/xn21hH7kyx8" type="video/mp4">
-          Your browser does not support the video tag.
+          <video class="" controls="yes">
+            <source src="https://youtu.be/xn21hH7kyx8" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
+          <p></i><span class="plomo">Ariana Grande</span><br> 7 Rings</p>
         </div>
       </div>
     </div>
 
     <div class="card juego">
       <h2>Juego preferido</h2>
+      <br>Tres en raya</label>
       <table>
         <tr>
-          <td>X</td>
-          <td>O</td>
+          <td><label>X</label></td>
+          <td><label>X</label></td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>O</td>
+          <td><label>O</label></td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td></td>
-          <td>X</td>
+          <td><label>X</label></td>
         </tr>
       </table>
     </div>
     <div class="card mi_form">
-      <h2>Agenda una reunion para conocernos</h2>
+      <h2>Agenda una reunión</h2>
       <form id="formulario">
         <div class="container_4">
           <div class="part_form1">
-            <label>Nombre: </label><br><input type="text" name="NombresCompletos" required><br><br>
-            <label>Apellidos: </label><br><input type="text" name="NombresCompletos" required><br><br>
-            <label>Correo electrónico: </label><br><input type="email" name="correo" required><br><br>
-            <label>Género: </label><br>
-            <input type="radio" name="genero" value="masculino">Masculino<br>
-            <input type="radio" name="genero" value="femenino">Femenino<br>
-            <input type="radio" name="genero" value="otro">Otro<br>
-          </div>
-          <div class="part_form2">
-            <label>Fecha: </label> <input type="date"><br><br>
+            <label>Nombre: </label><br><input type="text" name="NombresCompletos" required class="form_estilo"><br><br>
+            <label>Apellidos: </label><br><input type="text" name="NombresCompletos" required
+              class="form_estilo"><br><br>
+            <label>Correo electrónico: </label><br><input type="email" name="correo" required
+              class="form_estilo"><br><br>
+            <label>Fecha: </label> <br><input type="date" class="form_estilo"><br><br>
             <label>Plataforma: </label><br>
-            <select name="select">
+            <select name="select" class="form_estilo">
               <option value="windows">Teams</option>
               <option value="macOs">Zoom</option>
               <option value="linux">Google Meets</option>
-            </select><br><br>
-            <label>Mensaje: </label> <br><textarea name="textarea" rows="5" cols="10"></textarea><br><br>
+            </select><br>
+          </div>
+          <div class="part_form2">
+            <label>Mensaje: </label> <br><textarea name="textarea" rows="10" cols="25"></textarea><br><br>
             <input type="checkbox"> No soy un robot <br><br>
             <button>Enviar</button>
           </div>

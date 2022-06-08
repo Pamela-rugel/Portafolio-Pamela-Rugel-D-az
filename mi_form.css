@@ -1,20 +1,41 @@
 .container_4 {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 5rem;
-    grid-template-areas:
-      "part_form_1 part_form_2";
-  }
-  
-  .info_personal {
-    grid-area: info_personal;
-    display: inline-block;
-  }
-  
-  .cont_mapa {
-    grid-area: cont_mapa;
-    display: inline-flex;
-  }
-  
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5rem;
+  grid-template-areas:
+    "part_form_1 part_form_2";
+}
+
+textarea {
+  border-radius: 0.5rem;
+  background-color: var(--color-3);
+  border: 0;
+}
+
+.form_estilo {
+  border-radius: 0.5rem;
+  background-color: var(--color-3);
+  border: 0;
+  height: 1.7rem;
+  width: 12rem;
+}
+
+.form_estilo:hover {
+  background-color: var(--color-4);
+  border: 0;
+}
+
+div.container_4 button {
+  background-color: var(--color-3);
+  border-radius: 0.3rem;
+  border: 0;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+div.container_4 button:hover {
+  background-color: var(--color-4);
+  cursor: pointer;
+}

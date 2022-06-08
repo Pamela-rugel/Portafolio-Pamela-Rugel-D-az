@@ -5,7 +5,7 @@
 :root {
   --color-1: #F0ECE3;
   --color-2: #DFD3C3;
-  --color-3: #C7B198;
+  --color-3: #d1c0aa;
   --color-4: #A68DAD;
 }
 
@@ -22,8 +22,7 @@ body {
 
 /*contenedor que sapara perfi, informacion personal, habilidades, gustos musicales, juego preferido y el form */
 .container {
-  border-top: 30rem;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem 2rem;
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr 1fr;
@@ -31,8 +30,8 @@ body {
   grid-gap: 3rem;
   grid-template-areas:
     "perfil info info"
-    "perfil hab juego"
-    "perfil gustos mi_form";
+    "perfil hab gustos"
+    "perfil hab mi_form";
 }
 
 .perfil {
@@ -57,17 +56,16 @@ body {
 
 
 
-/*h2 {
-  font-size: 0.5rem;
-  font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+h2 {
+  font-size: clamp(1.5rem, 0.75rem + 1.33vw, 2.5rem);
   margin: 0.3em 0 0.1em 0;
-}*/
+}
 
 /* modelo de las cards*/
 div.container div.card {
   background-color: var(--color-2);
-  padding: 30px;
-  border-radius: 20px;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
   box-shadow: 15px #ad3500;
   position: relative;
   transition: all 0.3s ease;
@@ -80,6 +78,8 @@ div.container div.card {
 
 div.container div.card h2 {
   text-align: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--color-4);
 }
 
 /*sombra al pasar el mouse por la card */
@@ -94,6 +94,16 @@ div.container div.card h2 {
   z-index: 9999;
   top: 10px;
   right: 2rem;
+}
+
+.plomo {
+  color: #646363;
+}
+
+.icon {
+  /*font-size:2rem;*/
+  color: #A68DAD;
+  padding: 0.5rem;
 }
 
 

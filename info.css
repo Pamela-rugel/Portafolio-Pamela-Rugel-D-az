@@ -1,19 +1,19 @@
 .container_2 {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 5rem;
-    grid-template-areas:
-      "info_personal cont_mapa";
-  }
-  
-  .info_personal {
-    grid-area: info_personal;
-    display: inline-block;
-  }
-  
-  .cont_mapa {
-    grid-area: cont_mapa;
-    display: inline-flex;
-  }
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5rem;
+  grid-template-areas:
+    "info_personal cont_mapa";
+}
+
+.info_personal {
+  grid-area: info_personal;
+  display: inline-block;
+}
+
+.cont_mapa {
+  grid-area: cont_mapa;
+  display: inline-block;
+}
