@@ -26,10 +26,10 @@ body {
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 0.5fr 0.5fr 0.5fr;
   grid-gap: 3rem;
   grid-template-areas:
-    "perfil perfifl"
+    "perfil perfil"
     "info info"
     "hab gustos"
     "juego mi_form";

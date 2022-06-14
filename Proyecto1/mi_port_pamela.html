@@ -3,7 +3,7 @@
 
 <head>
   <title>Mi portafolio</title>
-  <link rel="icon" href="branch_icon.png">
+  <link rel="icon" href="images/branch_icon.png">
   <link rel='stylesheet' href='public/general.css' />
   <link rel='stylesheet' href='public/info.css' />
   <link rel='stylesheet' href='public/habilidades.css' />
@@ -12,7 +12,9 @@
   <link rel='stylesheet' href='public/mi_form.css' />
   <link rel='stylesheet' href='public/responsive.css' />
   <link rel='stylesheet' href='public/perfil.css' />
+  <link rel='stylesheet' href='public/redes.css' />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -24,9 +26,31 @@
 
   <div class="container">
     <div class="perfil">
-      <img src="images/perfil.jpg" alt="Foto de perfil" width="500px" height="300px">
-      <label>Pamela Rugel</label>
-      <p>El único modo de hacer un gran trabajo es amar lo que haces</p>
+      <div class="container_perfil">
+        <div class="imagenes">
+          <div class="superposicion">
+            <img src="images/portada.jpg" alt="Foto de perfil" id="img_portada">
+            <img src="images/pamela.jpeg" alt="Foto de perfil" id="img_perfil" class="imgRedonda">
+          </div>
+        </div>
+        <div class="status">
+          <h1>Pamela Rugel Díaz</h1>
+          <p>El único modo de hacer un gran trabajo es amar lo que haces &#128512; &#127803;</p>
+        </div>
+        <div class="redes">
+          <table>
+            <tr>
+              <td><a href="#" class="fa fa-facebook"></a></td>
+              <td><a href="#" class="fa fa-youtube"></a></i></td>
+              <td><a href="#" class="fa fa-twitter"></a></i></td>
+              <td><a href="#" class="fa fa-linkedin"></a></i></td>
+              <td><a href="#" class="fa fa-instagram"></a></i></td>
+              <td><a href="#" class="fa fa-github"></a></i></td>
+              <td><a href="#" class="fa fa-spotify"></a></i></td>
+            </tr>
+          </table>
+        </div>   
+      </div>
     </div>
     <div class="info">
       <div class="card">
@@ -35,7 +59,8 @@
           <div class="info_personal">
             <p> <i class="fa fa-birthday-cake icon" style="font-size: 1.5rem;"></i><span class="plomo"> Nació el </span>
               1 de abril del 2001</p>
-            <p> <i class="fa fa-institution icon" style="font-size: 1.5rem;"></i> <span class="plomo"> Estudia en </span>
+            <p> <i class="fa fa-institution icon" style="font-size: 1.5rem;"></i> <span class="plomo"> Estudia en
+              </span>
               ESPOL</p>
             <p> <i class="fa fa-graduation-cap icon" style="font-size: 1.5rem;"> </i> <span class="plomo">Carrera
               </span> Computación</p>
@@ -109,7 +134,8 @@
       </table>
     </div>
     <div class="card mi_form">
-      <h2>Agenda una reunión  <i class="fa fa-info-circle icon" style="font-size: 1.5rem;" title="Agenda una reunión virtual para conocernos"></i></h2>
+      <h2>Agenda una reunión <i class="fa fa-info-circle icon" style="font-size: 1.5rem;"
+          title="Agenda una reunión virtual para conocernos"></i></h2>
       <form id="formulario">
         <div class="container_4">
           <div class="part_form1">
@@ -128,7 +154,7 @@
           </div>
           <div class="part_form2">
             <label>Mensaje: </label> <br><textarea name="textarea" rows="10" cols="25"></textarea><br><br>
-            <input type="checkbox" > No soy un robot <br><br>
+            <input type="checkbox"> No soy un robot <br><br>
             <button>Enviar</button>
           </div>
         </div>

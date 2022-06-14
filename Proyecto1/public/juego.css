@@ -1,11 +1,11 @@
-table {
+div.juego table {
   width: 100%;
   border-collapse: separate;
   box-sizing: border-box;
   padding: 2rem 7rem 0rem 7rem;
 }
 
-td {
+div.juego td {
   font-size: 3rem;
   width: auto;
   height: 100%;
