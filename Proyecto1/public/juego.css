@@ -2,7 +2,7 @@ table {
   width: 100%;
   border-collapse: separate;
   box-sizing: border-box;
-  margin-top: 2rem;
+  padding: 2rem 7rem 0rem 7rem;
 }
 
 td {
@@ -18,4 +18,9 @@ td {
 
 div.card div.juego label {
   font-size: 1rem;
+}
+
+td:hover {
+  box-shadow: 0px 50px 75px -25px var(--color-4) !important;
+  top: -20px !important;
 }

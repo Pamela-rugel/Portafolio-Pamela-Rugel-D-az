@@ -22,26 +22,21 @@ body {
 
 /*contenedor que sapara perfi, informacion personal, habilidades, gustos musicales, juego preferido y el form */
 .container {
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 5rem 15rem;
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 3rem;
   grid-template-areas:
-    "perfil info info"
-    "perfil hab gustos"
-    "perfil juego mi_form";
+    "perfil perfifl"
+    "info info"
+    "hab gustos"
+    "juego mi_form";
 }
 
 .perfil {
   grid-area: perfil;
-}
-
-.hab_juego {
-  grid-area: hab_juego;
-  display: inline-flex;
-
 }
 
 .info {
@@ -49,8 +44,21 @@ body {
   /*display: inline-flex;*/
 }
 
-.gustos_form {
-  grid-area: gustos_form;
+.hab{
+  grid-area: hab;
+}
+
+.juego{
+  grid-area: juego;
+}
+
+.gustos {
+  grid-area: gustos;
+  /*display: inline-flex;*/
+}
+
+.mi_form {
+  grid-area: mi_form;
   /*display: inline-flex;*/
 }
 
