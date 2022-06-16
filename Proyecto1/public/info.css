@@ -17,3 +17,7 @@
   grid-area: cont_mapa;
   display: inline-block;
 }
+
+iframe{
+  border-radius: 1rem;
+}
