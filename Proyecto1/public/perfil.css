@@ -47,7 +47,7 @@ div.status p{
 #img_portada {
     border-radius: 1.5rem;
     width: 100%;
-    height: auto;
+    height: 21rem;
     position: absolute;
     z-index: -1;
 }

@@ -1,28 +1,28 @@
-.fa {
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-    box-shadow: 0px 50px 75px -25px var(--color-4) !important;
-    top: -20px !important;
-  }
-  
+div.redes .fa {
+  text-decoration: none;
+  color:#6e1786;
+}
 
-  div.redes table {
-    position: relative;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 25px 10px;
-    box-sizing: border-box;
-    padding: 2rem 7rem 0rem 7rem;
-  }
-  
-  div.redes td {
-    font-size: 2.1rem;
-    border: 0.2rem solid var(--color-4);
-    border-radius: 0.5rem;
-    text-align: center;
-  }
-  
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  box-shadow: 0px 50px 75px -25px var(--color-4) !important;
+}
+
+
+div.redes table {
+  position: relative;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 25px 10px;
+  box-sizing: border-box;
+  padding: 2rem 7rem 0rem 7rem;
+}
+
+div.redes td {
+  font-size: 2.1rem;
+  border: 0.2rem solid var(--color-4);
+  border-radius: 0.5rem;
+  text-align: center;
+}

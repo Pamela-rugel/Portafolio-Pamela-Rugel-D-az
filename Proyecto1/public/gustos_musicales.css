@@ -13,11 +13,13 @@
 .music1 {
   grid-area: music1;
   display: inline-flex;
+  justify-content: center;
 }
 
 .video {
   grid-area: video;
   display: inline-flex;
+  justify-content: center;
 }
 
 .estilo_audio {
