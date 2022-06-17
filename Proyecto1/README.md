@@ -1,5 +1,5 @@
-# Proyeco1
-Portafolio con los proyectos desarrollados en la materia de Desarrollo de Aplicaciones Web y Móviles (DAWM)
+# Proyecto1
+Portafolio con proyecto realizado en la materia de Desarrollo de Aplicaciones Web y Móviles (DAWM)
 
 ## Implementación y diseño de una página web en html con hojas de estilo en cascada.
 
