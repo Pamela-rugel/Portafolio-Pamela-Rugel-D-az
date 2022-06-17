@@ -20,47 +20,6 @@ body {
   background-color: var(--color-1);
 }
 
-/*contenedor que sapara perfi, informacion personal, habilidades, gustos musicales, juego preferido y el form */
-.container {
-  padding: 5rem 15rem;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.75fr 0.5fr 0.5fr 0.5fr;
-  grid-gap: 3rem;
-  grid-template-areas:
-    "perfil perfil"
-    "info info"
-    "hab gustos"
-    "juego mi_form";
-}
-
-.perfil {
-  grid-area: perfil;
-}
-
-.info {
-  grid-area: info;
-  /*display: inline-flex;*/
-}
-
-.hab {
-  grid-area: hab;
-}
-
-.juego {
-  grid-area: juego;
-}
-
-.gustos {
-  grid-area: gustos;
-  /*display: inline-flex;*/
-}
-
-.mi_form {
-  grid-area: mi_form;
-  /*display: inline-flex;*/
-}
 
 h2 {
   font-size: clamp(1.5rem, 0.75rem + 1.33vw, 2.5rem);
@@ -71,12 +30,12 @@ label {
   font-size: 1.3rem
 }
 
-p{
+p {
   font-size: 1.3rem
 }
 
 /* modelo de las cards*/
-div.container div.card {
+div.card {
   background-color: var(--color-2);
   padding: 2.5rem;
   border-radius: 1.5rem;
@@ -84,13 +43,19 @@ div.container div.card {
   position: relative;
   transition: all 0.3s ease;
   top: 0;
-  height: auto;
-  width: auto;
+}
+
+
+.fila2 {
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 /*titulo centrado en las cards*/
 
-div.container div.card h2 {
+div.card h2 {
   text-align: center;
   padding-bottom: 0.75rem;
   border-bottom: 3px solid var(--color-4);

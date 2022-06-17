@@ -1,3 +1,8 @@
+.perfil{
+    display: flex;
+    justify-content: center;
+}
+
 .container_perfil {
     display: grid;
     grid-auto-flow: row;

@@ -6,34 +6,95 @@
     box-sizing: border-box;
 }
 
-@media only screen and (min-device-width: 71px) and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
+    body {
+        display: inline-block;
+        justify-content: center;
 
-    .container {
+    }
+
+    .container_perfil {
+        grid-template-rows: 1.5fr 1fr !important;
+    }
+
+    .perfil{
+        padding: 3%;
+    }
+
+    .card{
+        margin: 3%;
+    }
+
+
+    #img_portada {
+        width: 100%;
+        height: 21rem;
+    }
+
+    .imgRedonda {
+        width: 10.75rem !important;
+        height: 10.75rem !important;
+    }
+
+    .superposicion:disabled {
+        background: #dddddd;
+    }
+
+    div.status {
+        text-align: center;
+        padding-left: 0rem !important;
+        padding-top: 2rem;
+    }
+
+
+    video {
+        width: 15rem;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .music1 {
+        display: inline-block;
+    }
+
+    .video {
+        display: inline-block;
+    }
+
+    .fila2 {
+        display: inline-block;
+        justify-content: center;
+        padding: 0% !important;
+    }
+    
+    .fila1{
+        padding: 0% !important;
+    }
+
+    .estilo_audio {
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .container_4 {
+        text-align: center;
         display: grid;
-        padding: 1rem 2rem;
+        padding-top: 1.2rem;
         grid-auto-flow: row;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 2rem;
         grid-template-areas:
-            "perfil"
-            "info"
-            "hab"
-            "gustos"
-            "juego"
-            "mi_form";
-      }
-
-    #img_perfil {
-        left: 10rem;
+            "part_form_1"
+            "part_form_2";
     }
 
     div.redes table {
-        padding: 0;
-        border-spacing: 0.5rem 0.5rem;
-      }
+        padding: 0 !important;
+        border-spacing: 0.5rem 0.5rem !important;
+    }
 
-    div.cont_mapa p{
+    div.cont_mapa p {
         margin-top: 0rem;
     }
 
@@ -47,127 +108,121 @@
     }
 }
 
+@media only screen and (min-device-width: 480px) and (max-device-width: 1050px) {
 
-/*desde 1900*/
+    .container_perfil {
+        grid-template-rows: 2fr 1fr !important;
+    }
+
+    .perfil{
+        padding: 3%;
+    }
+
+    .card{
+        margin: 3%;
+    }
+
+    #img_portada {
+        width: 100%;
+        height: 21rem;
+    }
+
+    #img_perfil {
+        left: 9rem !important;
+    }
+
+    .imgRedonda {
+        width: 10.75rem;
+        height: 10.75rem;
+    }
+
+    div.status {
+        text-align: center;
+        padding-left: 0rem !important;
+        padding-top: 2rem;
+    }
+
+    video {
+        width: 15rem;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .fila2 {
+        display: inline-block;
+        justify-content: center;
+        padding: 0% !important;
+    }
+
+    .fila1{
+        padding: 0% !important;
+    }
+
+    .estilo_audio {
+        width: 15rem;
+        height: 5rem;
+    }
+
+    div.redes table {
+        padding: 0 !important;
+        border-spacing: 0.5rem 0.5rem !important;
+    }
+
+    div.cont_mapa p {
+        margin-top: 0rem;
+    }
+
+    .container_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0rem;
+        grid-template-areas:
+            "info_personal"
+            "cont_mapa";
+    }
+
+}
+
+@media only screen and (min-device-width: 716px) and (max-device-width: 1050px) {
+    .container_perfil {
+        grid-template-rows: 2.3fr 1fr !important;
+    }
+}
 
 /*
-@media only screen and (min-device-width: 1800px) and (max-device-width: 1900px) {
+@media only screen and (min-device-width: 2000px) and (max-device-width: 3000px) {
     .container {
-        padding: 5rem 16rem;
-    }
-}
-@media only screen and (min-device-width: 1900px) and (max-device-width: 2000px) {
-    .container {
-        padding: 5rem 20rem;
-    }
-}
-@media only screen and (min-device-width: 2000px) and (max-device-width: 2100px) {
-    .container {
-        padding: 5rem 24rem;
-    }
-}
-@media only screen and (min-device-width: 2100px) and (max-device-width: 2200px) {
-    .container {
-        padding: 5rem 28rem;
-    }
-}
-@media only screen and (min-device-width: 2200px) and (max-device-width: 2300px) {
-    .container {
-        padding: 5rem 32rem;
-    }
-}
-@media only screen and (min-device-width: 2300px) and (max-device-width: 2400px) {
-    .container {
-        padding: 5rem 36rem;
-    }
-}
-@media only screen and (min-device-width: 2400px) and (max-device-width: 2500px) {
-    .container {
-        padding: 5rem 40rem;
-    }
-}
+        display: grid;
+        padding: 1rem 2rem;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 2rem;
+        grid-template-areas:
+            "perfil info hab"
+            "gustos juego mi_form"
+      }
 
-@media only screen and (min-device-width: 2500px) and (max-device-width: 2600px) {
-    .container {
-        padding: 5rem 44rem;
+      container_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0rem;
+        grid-template-areas:
+            "info_personal"
+            "cont_mapa";
     }
-}
 
-@media only screen and (min-device-width: 2700px) and (max-device-width: 2800px) {
-    .container {
-        padding: 5rem 48rem;
+    #img_perfil {
+        left: 15rem;
     }
-}
-@media only screen and (min-device-width: 2900px) and (max-device-width: 3000px) {
-    .container {
-        padding: 5rem 52rem;
-    }
-}
-@media only screen and (min-device-width: 3000px) and (max-device-width: 3100px) {
-    .container {
-        padding: 5rem 56rem;
-    }
-}
-@media only screen and (min-device-width: 3100px) and (max-device-width: 3200px) {
-    .container {
-        padding: 5rem 60rem;
-    }
-}
-@media only screen and (min-device-width: 3200px) and (max-device-width: 3300px) {
-    .container {
-        padding: 5rem 64rem;
-    }
-}
-@media only screen and (min-device-width: 3300px) and (max-device-width: 3400px) {
-    .container {
-        padding: 5rem 68rem;
-    }
-}
-@media only screen and (min-device-width: 3400px) and (max-device-width: 3500px) {
-    .container {
-        padding: 5rem 72rem;
-    }
-}
 
-@media only screen and (min-device-width: 3500px) and (max-device-width: 3600px) {
-    .container {
-        padding: 5rem 76rem;
-    }
-}
+    div.redes table {
+        padding: 0;
+        border-spacing: 0.5rem 0.5rem;
+      }
 
-@media only screen and (min-device-width: 3700px) and (max-device-width: 3800px) {
-    .container {
-        padding: 5rem 80rem;
-    }
-}
-@media only screen and (min-device-width: 3800px) and (max-device-width: 3900px) {
-    .container {
-        padding: 5rem 84rem;
-    }
-}
-@media only screen and (min-device-width: 3900px) and (max-device-width: 4000px) {
-    .container {
-        padding: 5rem 88rem;
-    }
-}
-@media only screen and (min-device-width: 4000px) and (max-device-width: 4100px) {
-    .container {
-        padding: 5rem 92rem;
-    }
-}
-@media only screen and (min-device-width: 4100px) and (max-device-width: 4200px) {
-    .container {
-        padding: 5rem 96rem;
-    }
-}
-@media only screen and (min-device-width: 4200px) and (max-device-width: 4300px) {
-    .container {
-        padding: 5rem 100rem;
-    }
-}
-@media only screen and (min-device-width: 4300px) and (max-device-width: 4400px) {
-    .container {
-        padding: 5rem 104rem;
+    div.cont_mapa p{
+        margin-top: 0rem;
     }
 }
 */
