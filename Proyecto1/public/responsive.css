@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 460px) {
     body {
         display: inline-block;
         justify-content: center;
@@ -108,7 +108,7 @@
     }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 1050px) {
+@media only screen and (min-device-width: 460px) and (max-device-width: 1050px) {
 
     .container_perfil {
         grid-template-rows: 2fr 1fr !important;
@@ -179,6 +179,19 @@
         grid-template-areas:
             "info_personal"
             "cont_mapa";
+    }
+
+    .container_4 {
+        text-align: center;
+        display: grid;
+        padding-top: 1.2rem;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2rem;
+        grid-template-areas:
+            "part_form_1"
+            "part_form_2";
     }
 
 }
