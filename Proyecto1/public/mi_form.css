@@ -1,5 +1,6 @@
 .container_4 {
   display: grid;
+  padding-top: 1.2rem;
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -38,6 +39,7 @@ div.container_4 button {
   border: 0;
   bottom: 2rem;
   right: 2rem;
+  padding: 0.3rem 2rem;
 }
 
 div.container_4 button:hover {

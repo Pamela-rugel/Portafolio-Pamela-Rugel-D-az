@@ -7,8 +7,11 @@
 }
 
 @media only screen and (min-device-width: 71px) and (max-device-width: 480px) {
+
     .container {
-        padding: 1rem;
+        display: grid;
+        padding: 1rem 2rem;
+        grid-auto-flow: row;
         grid-template-columns: 1fr;
         grid-template-rows: 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
         grid-gap: 2rem;
@@ -19,20 +22,20 @@
             "gustos"
             "juego"
             "mi_form";
+      }
+
+    #img_perfil {
+        left: 10rem;
     }
+
     div.redes table {
         padding: 0;
         border-spacing: 0.5rem 0.5rem;
       }
 
     div.cont_mapa p{
-        margin: 0rem;
+        margin-top: 0rem;
     }
-
-    div.hab{
-        justify-content: center;
-    }
-      
 
     .container_2 {
         grid-template-columns: 1fr;
@@ -47,6 +50,7 @@
 
 /*desde 1900*/
 
+/*
 @media only screen and (min-device-width: 1800px) and (max-device-width: 1900px) {
     .container {
         padding: 5rem 16rem;
@@ -166,22 +170,4 @@
         padding: 5rem 104rem;
     }
 }
-
-/*
-@media (min-width: 640px) {
-    body {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width:960px) {
-    body {
-        font-size: 0.5rem;
-    }
-}
-
-@media (min-width:1100px) {
-    body {
-        font-size: 0.75rem;
-    }
-}*/
+*/

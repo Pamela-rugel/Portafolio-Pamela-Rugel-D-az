@@ -25,7 +25,6 @@
 .estilo_audio {
   width: 20rem;
   height: 5rem;
-  color: var(--color-3);
 }
 
 div.container_3 audio controls {
@@ -40,4 +39,18 @@ div.container_3 div.music1 p {
 div.container_3 div.video p {
   padding-left: 2rem;
   padding-top: 1rem;
+}
+
+video{
+  width: 20rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--color-3);
+}
+
+audio::-webkit-media-controls-panel:hover {
+  background-color: var(--color-4);
 }
