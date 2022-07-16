@@ -1,6 +1,8 @@
 
 var myChart1;
 var myChart2;
+var myChart3;
+var myChart4;
 
 
 let btn = document.getElementById('buscar');
@@ -33,6 +35,7 @@ btn.addEventListener('click', (event) => {
             let status = []
             let weights = []
             let scores = []
+            let urls = []
 
             //Variables - diagrama de barras
             let endedEnglish = 0;
@@ -42,10 +45,14 @@ btn.addEventListener('click', (event) => {
             let runningEnglish = 0;
             let runningKorean = 0;
 
-            //Variables - para el doughnut
+            //Variables - para el doughnut (Types)
             let scripted = 0;
             let variety = 0;
             let animation = 0;
+
+            //Variables para el pie chart (premiadas)
+            let premiered = 0;
+            let notPremiered = 0;
 
             for (let movie of data) {
 
@@ -73,6 +80,8 @@ btn.addEventListener('click', (event) => {
                 status.push(statusMovie)
                 let weight = show.weight
                 weights.push(weight)
+                let url = show.url
+                urls.push(url)
 
 
                 //Conteo de los tipos de géneros
@@ -115,28 +124,40 @@ btn.addEventListener('click', (event) => {
                     animation++
                 }
 
+                //Conteo para el pie chart (premiadas)
+                if (show.hasOwnProperty('premiered')) {
+                    let show_premiered = show.premiered
+                    console.log(show_premiered)
+                    if (show_premiered != null) {
+                        premiered++
+                    }
+                    else {
+                        notPremiered++
+                    }
+                }
+
             }
             comedy.textContent = contComedy
             drama.textContent = contDrama
             family.textContent = contFamily
             action.textContent = contAction
-
+            
             //TOP 3
-            document.getElementById('name1').textContent = names[0]
+            document.getElementById('name1').innerHTML= `<a href="${urls[0]}" target="_blank">${names[0]} <a>`
             document.getElementById('type1').textContent = types[0]
             document.getElementById('language1').textContent = languages[0]
             document.getElementById('status1').textContent = status[0]
             document.getElementById('weight1').textContent = weights[0]
             document.getElementById('score1').textContent = scores[0].toFixed(2)
 
-            document.getElementById('name2').textContent = names[1]
+            document.getElementById('name2').innerHTML= `<a href="${urls[1]}" target="_blank">${names[1]} <a>`
             document.getElementById('type2').textContent = types[1]
             document.getElementById('language2').textContent = languages[1]
             document.getElementById('status2').textContent = status[1]
             document.getElementById('weight2').textContent = weights[1]
             document.getElementById('score2').textContent = scores[1].toFixed(2)
 
-            document.getElementById('name3').textContent = names[2]
+            document.getElementById('name3').innerHTML = `<a href="${urls[2]}" target="_blank">${names[2]} <a>`
             document.getElementById('type3').textContent = types[2]
             document.getElementById('language3').textContent = languages[2]
             document.getElementById('status3').textContent = status[2]
@@ -171,14 +192,35 @@ btn.addEventListener('click', (event) => {
                 }
             });
 
-            
-            if (myChart2 != null) {
-                myChart2.destroy();
+            //Pie chart
+            if (myChart3 != null) {
+                myChart3.destroy();
+            }
+            let ctx3 = document.getElementById('pie-chart').getContext('2d');
+            myChart3 = new Chart(ctx3, {
+                type: "pie",
+                data: {
+                    labels: ["Premiered", "Not premiered"],
+                    datasets: [{
+                        backgroundColor: [
+                            "rgba(161, 16, 176, .5)",
+                            "rgba(69, 16, 176, .7)",
+                        ],
+                        data: [premiered, notPremiered]
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+
+            if (myChart4 != null) {
+                myChart4.destroy();
             }
 
             // Types Doughnut
-            var ctx2 = document.getElementById("types-chart").getContext("2d");
-            myChart2 = new Chart(ctx2, {
+            var ctx4 = document.getElementById("types-chart").getContext("2d");
+            myChart4 = new Chart(ctx4, {
                 type: "doughnut",
                 data: {
                     labels: ["Scripted", "Variety", "Animation"],
@@ -293,12 +335,32 @@ btn.addEventListener('click', (event) => {
         }
     });
 
+    // Pie Chart
+
+    var ctx3 = $("#pie-chart").get(0).getContext("2d");
+    myChart3 = new Chart(ctx3, {
+        type: "pie",
+        data: {
+            labels: ["Premiered", "Not premiered"],
+            datasets: [{
+                backgroundColor: [
+                    "rgba(161, 16, 176, .5)",
+                    "rgba(69, 16, 176, .7)",
+                ],
+                data: [0,0]
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+
     // Types Doughnut
-    var ctx2 = $("#types-chart").get(0).getContext("2d");
-    myChart2 = new Chart(ctx2, {
+    var ctx4 = $("#types-chart").get(0).getContext("2d");
+    myChart4 = new Chart(ctx4, {
         type: "doughnut",
         data: {
-            labels: ["Italy", "France", "Spain"],
+            labels: ["Scripted", "Variety", "Animation"],
             datasets: [{
                 backgroundColor: [
                     "rgba(69, 16, 176, .7)",
@@ -309,13 +371,13 @@ btn.addEventListener('click', (event) => {
             }]
         },
         options: {
-            aspectRatio:1,
+            aspectRatio: 1,
             responsive: true
         }
 
-        
+
     });
-    myChart2.resize(600, 600);
+
 
 })(jQuery);
 
