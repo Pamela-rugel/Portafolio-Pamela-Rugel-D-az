@@ -37,11 +37,10 @@ div.container_3 div.music1 p {
 }
 
 div.container_3 div.video p {
-  padding-left: 2rem;
   padding-top: 1rem;
 }
 
-video{
+video {
   width: 20rem;
   height: auto;
   border-radius: 1rem;
