@@ -26,6 +26,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -79,8 +81,12 @@
                 </a>
                 <form class="d-none d-md-flex ms-4">
                     <input class="form-control border-0" id="palabra" placeholder="Ingrese una palabra">
-                    <button class="btn btn-outline-primary mx-3" id="buscar"> Buscar </button> 
+                    <button class="btn btn-outline-primary mx-3" id="buscar"> Buscar </button>    
                 </form>
+                <div class="cargar">
+                    
+                </div>
+                
                 <div class="title">
                     
                 </div>
@@ -107,7 +113,7 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 slideDown">
                             <i class="fa fa-grin-squint-tears fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Comedy</p>
@@ -116,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 slideDown">
                             <i class="fa fa-flushed fa-3x text-purple"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Drama</p>
@@ -125,7 +131,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 slideDown">
                             <i class="fa fa-grin-stars fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Family</p>
@@ -134,7 +140,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 slideDown">
                             <i class="fa fa-dizzy fa-3x text-purple"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Action</p>
@@ -149,16 +155,16 @@
             <!-- Charts Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="col-sm-12 col-xl-6 p-4 slideRight">
+                        <div class="bg-light text-center rounded">
+                            <div class="d-flex align-items-center justify-content-between mb-4 ">
                                 <h6 class="mb-0">Status</h6>
                                 <label class="text-primary">Show All</label>
                             </div>
                             <canvas id="status-chart"></canvas>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xl-6">
+                    <div class="col-sm-12 col-xl-6  slideLeft">
                         <div class="h-100 bg-light rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Top 3</h6>
@@ -216,7 +222,7 @@
             
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">     
-                    <div class="col-sm-12 col-xl-4">
+                    <div class="col-sm-12 col-xl-4 slideUp">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Premieres</h6>
@@ -225,7 +231,7 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                     </div> 
-                    <div class="col-sm-12 col-xl-4">
+                    <div class="col-sm-12 col-xl-4 slideUp">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Types</h6>
@@ -235,7 +241,7 @@
                         </div>
                     </div>  
                     <div class="col-sm-12 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
+                        <div class="h-100 bg-light rounded p-4 slideUp">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Calender</h6>
                                 <label class="text-primary">Show All</label>
@@ -254,7 +260,7 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                            &copy; <a href="#">Proyecto 2</a>
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

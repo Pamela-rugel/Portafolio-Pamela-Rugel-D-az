@@ -8,15 +8,18 @@ var myChart4;
 let btn = document.getElementById('buscar');
 
 btn.addEventListener('click', (event) => {
+
+    let contenedorTitulo = document.getElementsByClassName('title')[0]
+    contenedorTitulo.innerHTML = ``
+    let cargar = document.getElementsByClassName('cargar')[0];
+    cargar.innerHTML = '<div class="loader">Loading...</div>';
     event.preventDefault();
     let palabra = document.getElementById('palabra').value;
     let url_api = "https://api.tvmaze.com/search/shows?q=" + palabra
-
     fetch(url_api)
         .then(response => response.json())
         .then(data => {
-            let contenedorTitulo = document.getElementsByClassName('title')[0]
-            contenedorTitulo.innerHTML = `<h5 class="mb-0 mx-5">Movies with words similiar to "${palabra}"</h5>`
+            
 
             let comedy = document.getElementById('comedy')
             let drama = document.getElementById('drama')
@@ -127,7 +130,6 @@ btn.addEventListener('click', (event) => {
                 //Conteo para el pie chart (premiadas)
                 if (show.hasOwnProperty('premiered')) {
                     let show_premiered = show.premiered
-                    console.log(show_premiered)
                     if (show_premiered != null) {
                         premiered++
                     }
@@ -237,10 +239,9 @@ btn.addEventListener('click', (event) => {
                     responsive: true
                 }
             });
-
+            cargar.innerHTML = '';
+            contenedorTitulo.innerHTML = `<h5 class="mb-0 mx-2">Movies with words similiar to "${palabra}"</h5>`
         })
-
-
         .catch(console.error);
 });
 
