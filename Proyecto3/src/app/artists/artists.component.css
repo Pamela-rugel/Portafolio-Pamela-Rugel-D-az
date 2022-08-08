@@ -1,0 +1,106 @@
+.screen {
+    min-height: 100vh;
+    width: calc( 100vw - 2rem );
+    padding: 0 1rem ;
+  }
+  .page-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+  .artist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .artist__figure {
+    aspect-ratio: 1/1;
+    background: grey;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .artist__figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .artist__name {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+  .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    background-image: linear-gradient(#00000000,#00000080);
+  }
+  .tabs button {
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.25;
+    transform: scale(0.75,0.75);
+  }
+  .tabs mat-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .tabs .active {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  .bg {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .purple {
+    border-radius: 50%;
+    background: lightblue;
+    box-shadow: 0 0 10rem 10rem #f304fc90;
+    width: 0;
+    height: 0;
+    opacity: 0.50;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  .green {
+    border-radius: 50%;
+    background: lightblue;
+    box-shadow: 0 0 7rem 7rem #05f17b90;
+    width: 0;
+    height: 0;
+    opacity: 0.50;
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+  }
+  
