@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    
+<div class="container">
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">REST API ViewTist</h1>
+      <p class="lead my-3">Información sobre cantantes, sus álbumes y sus canciones</p>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Uso de la API
+      </h3>
+
+      <article class="blog-post">
+        <h4>Géneros Musicales</h4>
+        <p>GET - http://localhost:3000/api/genres</p>
+        <h6>Ejemplo</h6>
+        <img src="images/genres.png" alt="Ejemplo de uso de la API">
+
+        <h4>Cantantes</h4>
+        <p>GET - http://localhost:3000/api/artists</p>
+        <h6>Ejemplo</h6>
+        <img src="images/artist.png" alt="Ejemplo de uso de la API">
+        
+
+        <h4>Cantante por id (relacionado con sus álbumes)</h4>
+        <p>GET - http://localhost:3000/api/artists/:id</p>
+        <h6>Ejemplo</h6>
+        <img src="images/artistid.png" alt="Ejemplo de uso de la API">
+
+        <h4>Albums</h4>
+        <p>GET - http://localhost:3000/api/albums</p>
+        <h6>Ejemplo</h6>
+        <img src="images/album.png" alt="Ejemplo de uso de la API">
+
+        <h4>Album por id (relacionado con las canciones)</h4>
+        <p>GET - http://localhost:3000/api/albums/:id</p>
+        <h6>Ejemplo</h6>
+        <img src="images/albumid.png" alt="Ejemplo de uso de la API">
+
+        
+
+      </article>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">Acerca de la API</h4>
+          <p class="mb-0">Existen 125 registros de cantantes de diferentes países, relacionados a diversos tipos de géneros musicales. </p><br>
+          <p class="mb-0">Cada uno de los cantantes cuentan con 4 álbumes, teniendo un total de 500, de los cuales se lleva el registro de las ventas a nivel mundial.</p><br>
+          <p class="mb-0">Dichos álbumes cuentas con 9 canciones cada uno, teniendo un total de 4500, y el tiempo de duración de cada single interpretado por el cantante. </p>
+          <img src="images/relaciones.png" width="250" height="350" alt="Relaciones de las tablas">
+        </div>
+
+</main>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/style2.css" rel="stylesheet">
+    
+  </body>
+</html>

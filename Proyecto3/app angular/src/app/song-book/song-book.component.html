@@ -1,0 +1,31 @@
+<div class="screen dark-theme">
+  <button mat-icon-button routerLink="/albums">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <div class="song_book">
+    <div class="figure">
+      <img src="{{album_info.img}}" alt="">
+    </div>
+    <div class="song_book__detail">
+      <div class="song_book__name">Name: {{ album_info.nombre }}</div>
+      <div class="song_book__info">Release Date: {{ album_info.fecha_lanzamiento }}</div>
+      <div class="song_book__info">Sales: {{ album_info.ventas }}</div>
+      <div class="song_book__info">Featuring:</div>
+      <div class="song_book__info">{{ colabs }}</div>
+    </div>
+    <hr class="hr">
+    <div class="section-title">Songs</div>
+    <div class="songs">
+      <div class="song" *ngFor="let item of songs">
+        <div class="song__detail">
+          <div class="song__name">{{ item.nombre }}</div>
+          <div class="song_duration">{{ item.duracion }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg">
+  <div class="purple"></div>
+  <div class="green"></div>
+</div>

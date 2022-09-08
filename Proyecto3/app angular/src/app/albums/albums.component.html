@@ -1,0 +1,24 @@
+<div class="screen dark-theme">
+    <h2 class="page-title">Albums</h2>
+    <div class="albums">
+      <div class="album"  *ngFor="let item of albums" [routerLink]="['/song-book', item.id]">
+        <div class="album__figure" >
+          <img src="{{item.img}}" alt="imagen album
+          ">
+        </div>
+        <div class="album__name">{{ item.nombre }}</div>
+      </div>
+    </div>
+    <div class="tabs">
+      <button mat-icon-button  routerLink="/artists">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button class="active">
+        <mat-icon>subscriptions</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="bg">
+    <div class="purple"></div>
+    <div class="green"></div>
+  </div>

@@ -1,0 +1,35 @@
+<div class="screen dark-theme">
+    <button mat-icon-button routerLink="/artists">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div class="artist">
+      <div class="artist__figure">
+        <img src="{{infoArtist.img}}" alt="imagen">
+      </div>
+      <div class="artist__detail">
+        <div class="artist__name">Name: {{ infoArtist.nombre }}</div>
+        <div class="artist__country">Country: {{ infoArtist.pais }}</div>
+        <div class="artist__age">Age: {{ infoArtist.edad }}</div>
+        <div class="artist__genre">Genre: {{ infoArtist.genero}}</div>
+        <div class="artist__genre">Date Of Birth: {{date}}</div>
+
+      </div>
+      <hr class="hr">
+      <div class="section-title">Albums</div>
+      <div class="albums">
+        <div class="album"  *ngFor="let item of albums" [routerLink]="['/song-book', item.id]">
+          <div class="album__figure">
+            <img src="{{item.img}}" alt="imagen album">
+          </div>
+          <div class="album__detail">
+            <div class="album__name">{{ item.nombre }}</div>
+            <div class="album__date-release">{{ item.fecha_lanzamiento }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg">
+    <div class="purple"></div>
+    <div class="green"></div>
+  </div>

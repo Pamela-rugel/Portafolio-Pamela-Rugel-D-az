@@ -1,0 +1,37 @@
+<div class="screen dark-theme">
+    <h2 class="page-title">Artists</h2>
+    <form action="" class="search">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Select to genre</mat-label>
+        <mat-select  name="option">
+          <mat-option *ngFor="let option of genres" [value]="option" (click)="cambiar(option)">
+            {{option}}
+          </mat-option>
+        </mat-select>
+
+      </mat-form-field>
+    </form>
+    <div class="list" *ngIf="listArtists.length > 0">
+      <div class="artist"  *ngFor="let item of listArtists">
+        <div class="artist__figure" [routerLink]="['/info-album', item.id]">
+          <img src="{{ item.img }}" alt="imagen">
+        </div>
+        <div class="artist__name">{{ item.nombre}} - {{ item.genero}}</div>
+      </div>
+    </div>
+    <div class="tabs">
+      <button mat-icon-button class="active">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button routerLink="/albums">
+        <mat-icon>subscriptions</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="bg">
+    <div class="purple"></div>
+    <div class="green"></div>
+  </div>
+
+<script src="https://gist.github.com/anonymous/3b3b2b2b2b2b2b2b2b2b2b2b2b2b2b2b.js"></script>
